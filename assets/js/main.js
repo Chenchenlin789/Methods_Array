@@ -88,5 +88,22 @@ let checkNumber = [
     78
 ];
 
-checkNumber.forEach(n => console.log('<p>' + element + '</p>'))
-console.log(getraenke)
+
+
+// let checkedNum = checkNumber.filter(x => x % 3 == 0)
+// console.log(checkedNum)
+
+// checkNumber.forEach(elt => console.log(elt + 100))
+
+
+
+function check(numArray) {
+    numArray.forEach((element, index) => {
+        if (element % 3 == 0) {
+            numArray[index] = element + 100;
+        }
+    })
+    console.log(numArray)
+}
+
+check(checkNumber)
